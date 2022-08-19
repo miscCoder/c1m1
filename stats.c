@@ -312,7 +312,7 @@ int sort_array( unsigned char *array, unsigned int arraySize)
   {
     thisElement = array[arrayIndex];
     nextElement = array[arrayIndex + 1];
-    if( thisElement <= nextElement) arrayIndex++;
+    if( thisElement >= nextElement) arrayIndex++;
     else
     {
       array[arrayIndex] = nextElement;
